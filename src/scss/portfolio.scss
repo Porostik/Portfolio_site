@@ -1,0 +1,46 @@
+.portfolio {
+  padding-top: 110px;
+  background-color: #f6f6f6;
+
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #070707;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 100px;
+
+      &__photo {
+        padding: 0 20px;
+        img {
+          width: 100%;
+        }
+      }
+
+      &__info {
+        margin-top: 45px;
+        text-align: center;
+        font-family: 'Open sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #070707;
+        text-decoration: underline;
+      }
+
+      @media (max-width: 440px) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
